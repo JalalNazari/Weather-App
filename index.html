@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="Icons/css/all.css">
+    <link rel="stylesheet" href="CSS/weathericons.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h3>Weather-APP</h3>
+        </div>
+        <div class="openMenu"><i class="fa-solid fa-bars"></i></div>
+        <div class="items">
+            <a href="Map">Map</a>
+            <a href="Alerts">Alerts</a>
+            <div class="dropdown">
+                <button class="dropdown-toggle" id="toggleDropdown" onclick="toggleDropdown()">Contact</button>
+                <ul class="dropdown-menu" id="myDropdown">
+                  <li>030000000</li>
+                  <li>info@weatherapp.com</li>
+                </ul>
+            </div>
+            <div class="closeMenu"><i class="fa-solid fa-times"></i></div>
+        </div>
+       
+        <div class="closeNav"></div>
+    </nav>
+    
+    <div class="search-parents">
+        <div class="search">
+            <input type="text" placeholder="Enter the city name.">
+            <button><i class="fa-solid fa-search"></i></button>
+        </div>  
+    </div>
+
+    <div class="error">
+        <p> <i class="fa-solid fa-exclamation-triangle"></i> Invaild city name!</p>
+    </div>
+
+    <div class="weather">
+        <button class="add">Add</button>
+        <p class="city">Kabul</p>
+        <div class="weather-icon">
+            <div class="icon rainy">
+                <div class="cloud"></div>
+                <div class="rain"></div>
+            </div>  
+        </div>
+        <h2 class="temp">22 C</h2>
+
+        <div class="colParents">
+            <div class="col">
+                <i class="fa-solid fa-water"></i>
+                <div>
+                    <p class="humidity">50%</p>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="coll">
+                <i class="fa-solid fa-wind"></i>
+                <div>
+                    <p class="wind">15 km/h</p>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="list">
+        
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
